@@ -1,7 +1,7 @@
 
 import {useEffect, useState} from "react"
 import Image from "next/image"
-import Movie from "../typings.d"
+import { Movie } from "../typings.d"
 import { baseUrl } from "../constants/movie"
 import { FaPlay } from 'react-icons/fa'
 import { FiInfo } from 'react-icons/fi'
@@ -10,8 +10,6 @@ import { FiInfo } from 'react-icons/fi'
 interface Props {
   netflixOriginals: Movie[]
 }
-
-
 
 function Banner({netflixOriginals}:Props) {
 
