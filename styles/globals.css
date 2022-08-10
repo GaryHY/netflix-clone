@@ -1,3 +1,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/*html native tags*/
+@layer base {
+    body {
+        @apply bg-[#141414] text-white
+    }
+    /*On stylise ici car le composant revient souvent.*/
+    header {
+        @apply fixed top-0 z-50 w-full flex justify-between items-center p-4 transition-all lg:px-10 lg:py-6
+    }
+
+}
+
+/* Custom components */
+@layer components {
+    .headerLink {
+        @apply cursor-pointer text-sm font-light text-[#e5e5e5] transition duration-[0.4] hover:text-[#b3b3b3]
+    }
+
+    .bannerButton {
+        @apply flex items-center gap-x-2 px-5 py-1.5 rounded transition hover:opacity-75
+    }
+}
+
+
